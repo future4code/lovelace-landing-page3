@@ -1,151 +1,179 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 90px 1fr 80px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 90px 1fr 80px;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #132235;
-  padding: 0 2.4rem;
-  height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #132235;
+    padding: 0 2.4rem;
+    height: 100%;
 }
 
 header nav {
-  display: flex;
-  color: white;
+    display: flex;
+    color: white;
 }
 
 nav p {
-  margin: 0 1.3rem;
+    margin: 0 1.3rem;
 }
 
 .logo {
-  width: 10rem;
+    width: 10rem;
 }
 
 main {
-  grid-row: 2/3;
+    grid-row: 2/3;
 }
 
 section {
-  display: flex;
+    display: flex;
 }
 
 .container {
-  display: grid;
-  height: 600px;
-  grid-template-columns: 1fr 1fr;
-  padding: 2rem 5rem;
-  width: 100%;
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 5rem;
+    width: 100%;
 }
 
 .l-section {
-  grid-column: 1/2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 2rem;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
 }
 
 .r-section {
-  grid-column: 2/3;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .l-section h1 {
-  color: #00dbd4;
-  font-weight: 800;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  margin-bottom: 1rem;
+    color: #00dbd4;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 #container2 {
-  background-color: #f5f5f5;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
 }
 
 #container2 img {
-  height: 100%;
+    height: 100%;
 }
 
 #titulo-container2 {
-  margin-bottom: 1.5rem;
-  color: #132235;
+    margin-bottom: 1.5rem;
+    color: #132235;
 }
 
 #tabela-precos {
-  border-collapse: separate;
-  border-spacing: 0.3rem 0.3rem;
+    border-collapse: separate;
+    border-spacing: 0.3rem 0.3rem;
 }
 
 #tabela-precos tr {
-  height: 40px;
+    height: 40px;
 }
 
 #tabela-precos th {
-  width: 120px;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: 2px 2px 4px lightgray;
-  color: #132235;
+    width: 120px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 2px 2px 4px lightgray;
+    color: #132235;
 }
 
 #tabela-precos td {
-  text-align: center;
-  border-radius: 12px;
-  background-color: white;
-  box-shadow: 2px 2px 4px lightgray;
+    text-align: center;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 2px 2px 4px lightgray;
 }
 
 .container2 p {
-  margin-top: 1.5rem;
-
-  text-align: center;
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 #container3 {
-  grid-column: 1/-1;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  height: 500px;
-  padding: 2rem 5rem;
-  background-color: #7298d6;
-  color: #f5f5f5;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 500px;
+    padding: 2rem 5rem;
+    background-color: #7298d6;
+    color: #f5f5f5;
 }
 
 #container3 h1 {
-  margin: 1rem 0;
-  color: #132235;
+    margin: 1rem 0;
+    color: #132235;
 }
 
-#trabalhe-conosco{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30rem;
+#trabalhe-conosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
 }
 
 footer {
-  grid-row: 3/-1;
-  background-color: #132235;
+    border-top: 2px solid black;
+    grid-row: 3/-1;
+    background-color: #132235;
+    height: 10rem;
+}
+
+ul {
+    display: grid;
+    padding: 1rem;
+}
+
+li {
+    padding: 2px;
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(109, 109, 238);
+}
+
+.icones {
+    margin-right: 2rem;
+    display: flex;
+    width: 2rem;
+}
+
+.botao-de-voltar {
+    text-align: center;
+    text-decoration: none;
 }
