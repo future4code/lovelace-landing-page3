@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
   height: 100vh;
   display: grid;
-  grid-template-rows: 80px 1fr 1fr;
+  grid-template-rows: 90px 1fr 80px;
 }
 
 header{
@@ -15,7 +16,9 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: #132235;
-  padding: 3rem;
+  padding: 0 2.4rem;
+  height: 100%;
+  width: 100vw;
 }
 
 header nav{
@@ -29,4 +32,48 @@ nav p{
 
 .logo{
   width: 10rem;
+}
+
+main{
+  grid-row: 2/3;
+  padding: 2rem 5rem;
+
+}
+
+.main-section{
+  display: grid;
+  height: 400px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.l-section{
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.r-section{
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  box-shadow: 2px 2px 5px ;
+}
+
+.l-section h1{
+  color: #00DBD4;
+  font-weight: 900;
+}
+
+
+
+
+footer{
+  grid-row: 3/-1;
+  background-color: #132235;
 }
