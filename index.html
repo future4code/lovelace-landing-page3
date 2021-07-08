@@ -49,7 +49,11 @@
 
       <section id="container2">
         <div class="l-section">
-          <img src="./src/republica.png" alt="Jovens estudando" />
+          <img
+            id="img-republica"
+            src="./src/republica.png"
+            alt="Jovens estudando"
+          />
         </div>
         <div class="r-section container2">
           <h1 id="titulo-container2">Prático para todos</h1>
@@ -94,8 +98,21 @@
 
       <section id="trabalhe-conosco">
         <div>
-          <form action="submit">
-            <input type="text" placeholder="Nome" />
+          <form id="form" action="submit">
+            <div id="nome">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" name="name"/>
+            </div>
+            <div id="telefone">
+              <label for="phone">Telefone</label>
+              <input type="number" id="phone" name="phone"/>
+            </div>
+            <div id="mensagem">
+              <label for="mensagem">Mensagem</label>
+              <input type="text" id="mensagem" name="mensagem"/>
+
+            </div>
+
           </form>
         </div>
       </section>
