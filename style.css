@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 1fr;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #132235;
+  padding: 3rem;
+}
+
+header nav{
+  display: flex;
+  color: white;
+}
+
+nav p{
+  margin: 0 1.3rem;
+}
+
+.logo{
+  width: 10rem;
+}
