@@ -230,6 +230,7 @@ h3 {
 
 form {
   width: 80%;
+  max-width: 1000px;
 }
 
 .campo-duplo {
