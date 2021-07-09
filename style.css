@@ -7,20 +7,28 @@
 
 body {
   height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-rows: 90px 1fr 80px;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #132235;
-  padding: 0 2.4rem;
   height: 100%;
 }
 
-header nav {
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1232px;
+  padding: 0 2rem;
+}
+
+.header nav {
   display: flex;
   color: white;
 }
@@ -28,6 +36,7 @@ header nav {
 nav p {
   margin: 0 1.3rem;
   color: white;
+  width: 100%;
 }
 
 nav a {
@@ -73,6 +82,29 @@ section {
   height: 100%;
 }
 
+@media screen and (min-width: 0px) and (max-width: 880px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .l-section {
+    margin: 2rem;
+  }
+
+  .header nav{
+    display: none;
+  }
+
+  .header{
+    justify-content: center;
+  }
+}
+
+
 .l-section {
   grid-column: 1/2;
   display: flex;
@@ -109,6 +141,7 @@ section {
   background-size: cover;
   height: 30rem;
   width: 100%;
+  padding: 0;
 }
 
 #img-republica {
@@ -174,7 +207,7 @@ section {
   max-width: 1080px;
 }
 
-#trabalhe-conosco {
+#fale-conosco {
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
