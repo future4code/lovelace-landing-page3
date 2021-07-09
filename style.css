@@ -42,6 +42,7 @@ nav p {
   margin: 0 1.3rem;
   color: white;
   width: 100%;
+  transition: color 0.3s ease;
 }
 
 nav a {
@@ -85,29 +86,6 @@ section {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100%;
-}
-
-@media screen and (min-width: 0px) and (max-width: 880px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .l-section {
-    margin: 2rem;
-  }
-
-  .header nav {
-    display: none;
-  }
-
-  .header {
-    justify-content: center;
-  }
-
 }
 
 .l-section {
@@ -280,7 +258,7 @@ form {
   font-size: 16px;
   border: none;
   border-bottom: solid 1px #132235;
-  height: 90%;
+  height: 70%;
   display: block;
   outline: none;
   padding: 10px 0 8px 0;
@@ -312,7 +290,153 @@ form {
   cursor: pointer;
 }
 
+#nosso-time{
+  height: 30rem;
+  background-color: #fcfcfc;
+}
+
+#titulo-nosso-time{
+  margin-bottom: 3rem;
+  grid-column: 1/-1;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  width: 100%;
+  max-width: 1080px;
+  justify-items: center;
+  align-items: center;
+}
+
+.integrante{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.perfil{
+  box-shadow: 2px 2px 4px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.cleiton{
+  background: url('./src/cleiton.jpg');
+  background-size: cover;
+}
+
+.leandro{
+  background: url('./src/leandro.jpeg');
+  background-size: cover; 
+}
+
+.matheus{
+  background: url('./src/matheus.png');
+  background-size: cover;
+}
+
+.mostra-texto{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-color: rgba(19, 34, 53, 0.7);
+  border-radius: 100px;
+}
+
+.mostra-texto p{
+  color: white;
+  font-weight: 600;
+}
+
+.nome-integrante{
+  margin-top: 10px;
+  color: #132235;
+  font-weight: 600;
+}
+
+.mostra-texto:hover{
+  opacity: 1;
+}
+
+
 footer {
   grid-row: 3/-1;
-  background-color: #132235;
+  background-color: #333333;
+}
+
+.footer{
+  padding: 0 3rem;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.icon{
+  width: 50px;
+  padding: 5px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 880px) {
+  #container1{
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .l-section {
+    margin: 2rem;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .container-grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nosso-time{
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .campo-duplo{
+    display: block;
+  }
+
+  #fale-conosco{
+    height: auto;
+    padding: 3rem 0;
+  }
+
 }
