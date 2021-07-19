@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>F4Life</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/src/fav.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+
+  <body>
+    <header>
+      <div class="header" id="header">
+        <div>
+          <img
+            class="logo"
+            src="./src/f4life-fundo-branco.png"
+            alt="Logo Marca"
+          />
+        </div>
+        <nav>
+          <a href="#container2"><p>Produtos</p></a>
+          <a href="#container3"><p>Quem somos</p></a>
+          <a href="#fale-conosco"><p>Fale conosco</p></a>
+          <a href="#footer"><p>Nosso time</p></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="container1">
+        <div class="general-container">
+          <div class="container">
+            <div class="l-section">
+              <h1 id="titulo">As melhores memórias começam aqui.</h1>
+              <p>
+                Na F4Life oferecemos aluguéis de repúblicas para universitários.
+              </p>
+            </div>
+            <div class="r-section">
+              <img src="./src/colagem.png" alt="Jovens felizes" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="container2">
+        <div class="general-container">
+          <div class="flex">
+            <h1 id="titulo-container2">Prático para todos</h1>
+            <table id="tabela-precos">
+              <tr>
+                <th>Quartos</th>
+                <th>M²</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>80m²</td>
+                <td>R$ 599,00</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>160m²</td>
+                <td>R$ 899,00</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>140m²</td>
+                <td>R$ 779,00</td>
+              </tr>
+            </table>
+            <p>
+              Temos republicas para grupos de vários tamanhos. Certamente você
+              irá se encontrar em algum deles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="container3">
+        <div>
+          <h2 id="titulo3">Quem somos</h2>
+          <p>
+            Somos a maior imobiliária de repúblicas universitárias do Brasil.
+            Pensando no estudante e no seu bem estar de vida e estudos, nos
+            preocupamos com um ambiente amigável e receptivo. Trabalhamos com
+            uma política flexível para o proprietário e inquilinos. Oferecemos
+            todas as vantagens de uma negociação rápida e sem burocracias.
+          </p>
+        </div>
+      </section>
+
+      <section id="fale-conosco">
+        <h3>FALE CONOSCO</h3>
+        <form action="">
+          <div class="campo-duplo">
+            <div class="campo">
+              <label for="nome" class="label-contato">Nome completo</label>
+              <div class="input-contato">
+                <input type="text" id="nome" />
+              </div>
+            </div>
+            <div class="campo">
+              <label for="nome" class="label-contato">Telefone</label>
+              <div class="input-contato">
+                <input type="text" id="nome" />
+              </div>
+            </div>
+          </div>
+          <div class="contato-campo-unico">
+            <div class="campo">
+              <label for="nome" class="label-contato">Mensagem</label>
+              <div class="input-contato unico">
+                <input type="text" id="nome" />
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <button type="reset">Enviar</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="nosso-time">
+        <div class="container-grid">
+          <h2 id="titulo-nosso-time">Nosso time</h2>
+          <div class="integrante">
+            <div class="perfil cleiton">
+              <div class="mostra-texto">
+                <p>Desenvolvedor Web</p>
+              </div>
+            </div>
+            <p class="nome-integrante">Cleiton Silva</p>
+          </div>
+
+          <div class="integrante">
+            <div class="perfil leandro">
+              <div class="mostra-texto">
+                <p>Desenvolvedor Web</p>
+              </div>
+            </div>
+            <p class="nome-integrante">Leandro Wilker</p>
+          </div>
+
+          <div class="integrante">
+            <div class="perfil matheus">
+              <div class="mostra-texto">
+                <p>Desenvolvedor Web</p>
+              </div>
+            </div>
+            <p class="nome-integrante">Matheus De Souza</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer">
+        <div class="icons">
+          <a href="https://www.instagram.com/" target="_blank">
+            <img class="icon" src="./src/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img class="icon" src="./src/facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img class="icon" src="./src/twitter.png" alt="Twitter" />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img class="icon" src="./src/linkedin.png" alt="Linkedin" />
+          </a>
+        </div>
+        <div class="back-top">
+          <a href="#header"
+            ><img class="icon" src="./src/arrow-157-xxl.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
